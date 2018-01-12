@@ -1,0 +1,5 @@
+ProjectTitle: yebo-bikes
+
+PageList:
+- file: page.html
+  ready: 50
