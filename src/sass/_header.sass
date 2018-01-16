@@ -1,14 +1,19 @@
 .header__img 
   width: 100%
+  min-height: 200px
   
 .header__nav
   position: absolute
-  top: 41px;
-  left: calc(50% - 318px)
+  top: 49px
+  left: calc(100% - 83px)
   
 .header__nav ul
   display: flex
-  
+  flex-direction: column
+ 
+.header__logo 
+  display: none
+
 .header__navitem
   margin-right: 56px
   text-decoration: none
@@ -19,15 +24,45 @@
   text-transform: uppercase
   line-height: 1.2
 
+.header__nav ul li
+  margin-bottom: 14px
+  text-align: right
 
-.header__navdot:after
-  content: "."
-  font-size: 13px
-  font-family: 'Lato', sans-serif
-  color: rgb(77, 73, 89)
-  font-weight: bold
-  text-transform: uppercase
-  line-height: 1.2
-  margin-left: 62px
+.header__navitem:hover
+  color: #9A7E91
 
+.header__logomob
+  position: absolute
+  top: 55px
+  left: 8px
 
+.header__logomob img 
+  width: 64%;
+
+@media (min-width: 700px)
+  .header__logomob
+    display: none
+
+  .header__nav ul
+    flex-direction: row
+    
+  .header__nav
+    top: 41px
+    left: calc(50% - 318px)
+  
+  .header__navdot:after
+    content: "."
+    font-size: 13px
+    font-family: 'Lato', sans-serif
+    color: rgb(77, 73, 89)
+    font-weight: bold
+    text-transform: uppercase
+    line-height: 1.2
+    margin-left: 62px
+    
+  .header__nav ul li
+    text-align: left
+  
+  .header__logo 
+    display: block
+    
