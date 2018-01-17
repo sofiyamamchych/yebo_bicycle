@@ -1,8 +1,8 @@
 footer
   display: flex
   justify-content: space-between
-  width: 80%
-  margin-left: 10%
+  @include background-color
+  padding: 50px 10%
 
 .footer__contacts, .footer__contacts a   
   text-decoration: none
@@ -30,7 +30,10 @@ footer
 .footer__creditslogo
     position: relative
     top: 15px
-    
+  
+@media (min-width: 700px)  
+  footer
+    padding: 108px 10%
 
 
 
