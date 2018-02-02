@@ -2,11 +2,12 @@
   @include background-color
   padding: 41px 10% 41px  
 
-.widetext p
+.widetext p, .narrowtext p
   @include default-font(18px)
   color: rgb(132, 135, 137)
   line-height: 1.889
   text-align: center
+
 
 .post-icon
   text-align: center
@@ -18,7 +19,33 @@
 .bigphoto-row
   display: grid
   grid-template-columns: 100%
+  grid-template-rows: 350px
+  
+.narrowtext__photo
+  width: 100%
 
+.narrowtext
+  display: flex
+  flex-direction: column
+  height: 350px
+
+.narrowtext__text
+  height: 200px
+  overflow: hidden
+
+.twitter p
+  @include default-font(24px)
+  color: rgb(132, 135, 137)
+  font-style: italic
+  line-height: 1.417
+  text-align: center
+  
+.twitter a
+  text-decoration: none
+    
+.twitter-time
+  color: rgb(132, 135, 137)
+  
 
 
 @media (min-width: 700px) 
@@ -31,4 +58,5 @@
     
   .bigphoto-row
     grid-template-columns: 66.66% 33.33%
-    
+    height: 350px
+    overflow: hidden
