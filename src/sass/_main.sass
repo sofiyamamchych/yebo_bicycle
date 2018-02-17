@@ -33,7 +33,7 @@
   height: 200px
   overflow: hidden
 
-.twitter p
+.twitter p, .subscribe__motto
   @include default-font(24px)
   color: rgb(132, 135, 137)
   font-style: italic
@@ -46,6 +46,32 @@
 .twitter-time
   color: rgb(132, 135, 137)
   
+.subscribe
+  text-align: center
+  padding: 100px 0
+
+.subscribe__logo
+  margin-bottom: 13px
+
+.subsribe__emailunput
+  margin-top: 17px
+
+.email
+  border: 1px solid #d3d7d9
+  padding: 18px 25px 25px 15px
+  @include default-font(20px)
+  color: rgba(146, 146, 146, 0.502)
+  font-style: italic
+  line-height: 1.2
+
+.submit
+  @include default-font(24px)
+  color: rgb(255, 255, 255)
+  line-height: 1.2
+  text-align: center
+  @include accent-color
+  padding: 15px 41px 25px 38px
+  margin-top: 18px
 
 
 @media (min-width: 700px) 
